@@ -57,13 +57,13 @@ deinit {
 After the action is completed and you want to hide the refresher:
 
 ```swift
-tableView.endRefreshing()
+tableView.endRefreshing(at: .top)
 ```
 
 You can also start refreshing programmatically:
 
 ```swift
-tableView.startRefreshing()
+tableView.startRefreshing(at: .top)
 ```
 
 But you probably won’t use this component, though. *UITableViewController* and *UICollectionViewController* already have a simple type of refresher.
